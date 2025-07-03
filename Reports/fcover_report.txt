@@ -1,0 +1,554 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /apb_top/duv/slave
+=== Design Unit: work.apb_slave_new
+=================================================================================
+
+Directive Coverage:
+    Directives                      11        11         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/apb_top/duv/slave/cov_ST_A1             apb_slave_new Verilog  SVA  apb_slave.sv(229)
+                                                                               846 Covered   
+/apb_top/duv/slave/cov_apb_protocol      apb_slave_new Verilog  SVA  apb_slave.sv(249)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_addr_stable       apb_slave_new Verilog  SVA  apb_slave.sv(254)
+                                                                              9904 Covered   
+/apb_top/duv/slave/cov_Wdata_stable      apb_slave_new Verilog  SVA  apb_slave.sv(259)
+                                                                              7352 Covered   
+/apb_top/duv/slave/cov_pready_when_expected 
+                                         apb_slave_new Verilog  SVA  apb_slave.sv(264)
+                                                                              9904 Covered   
+/apb_top/duv/slave/cov_rdata_valid       apb_slave_new Verilog  SVA  apb_slave.sv(269)
+                                                                              2552 Covered   
+/apb_top/duv/slave/cov_reg_enable_when_access 
+                                         apb_slave_new Verilog  SVA  apb_slave.sv(274)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_reg_addr_matched  apb_slave_new Verilog  SVA  apb_slave.sv(279)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_reg_wdata_matched apb_slave_new Verilog  SVA  apb_slave.sv(284)
+                                                                              14702 Covered   
+/apb_top/duv/slave/cov_reg_write_matched apb_slave_new Verilog  SVA  apb_slave.sv(289)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_no_write_when_zero_strb 
+                                         apb_slave_new Verilog  SVA  apb_slave.sv(294)
+                                                                                 2 Covered   
+
+=================================================================================
+=== Instance: /coverage_pkg
+=== Design Unit: work.coverage_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    98.86%
+        Coverpoints/Crosses         11        na        na        na
+            Covergroup Bins        109       108         1    99.08%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_pkg/apb_funct_coverage/apb_funct_cov_cg 
+                                                       98.86%        100          -    Uncovered            
+    covered/total bins:                                   108        109          -                      
+    missing/total bins:                                     1        109          -                      
+    % Hit:                                             99.08%        100          -                      
+    Coverpoint PRESETn_cp                              50.00%        100          -    Uncovered            
+        covered/total bins:                                 4          8          -                      
+        missing/total bins:                                 4          8          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PWRITE_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 4          8          -                      
+        missing/total bins:                                 4          8          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PWDATA_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PADDR_cp                                50.00%        100          -    Uncovered            
+        covered/total bins:                                16         32          -                      
+        missing/total bins:                                16         32          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PSELx_cp                                50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PENABLE_cp                              50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PRDATA_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PREADY_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Cross PSELx_cross_PENABLE                          50.00%        100          -    Uncovered            
+        covered/total bins:                                 3          6          -                      
+        missing/total bins:                                 3          6          -                      
+        % Hit:                                         50.00%        100          -                      
+    Cross PWRITE_cross_PREADY                          43.75%        100          -    Uncovered            
+        covered/total bins:                                 7         16          -                      
+        missing/total bins:                                 9         16          -                      
+        % Hit:                                         43.75%        100          -                      
+    Cross PWRITE_cross_RegADDR                         50.00%        100          -    Uncovered            
+        covered/total bins:                                64        128          -                      
+        missing/total bins:                                64        128          -                      
+        % Hit:                                         50.00%        100          -                      
+ Covergroup instance \/coverage_pkg::apb_funct_coverage::apb_funct_cov_cg#2  
+                                                       98.86%        100          -    Uncovered            
+    covered/total bins:                                   108        109          -                      
+    missing/total bins:                                     1        109          -                      
+    % Hit:                                             99.08%        100          -                      
+    Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin deasserted                                    846          1          -    Covered              
+        bin asserted                                    43569          1          -    Covered              
+        bin asserted_deasserted_trans                     210          1          -    Covered              
+        bin deasserted_asserted_trans                     209          1          -    Covered              
+    Coverpoint PWRITE_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                       32857          1          -    Covered              
+        bin read                                        11554          1          -    Covered              
+        bin write_read_trans                             2165          1          -    Covered              
+        bin read_write_trans                            30691          1          -    Covered              
+    Coverpoint PWDATA_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zeros                                        2252          1          -    Covered              
+        bin ones                                         3165          1          -    Covered              
+        default bin others                              27440                     -    Occurred             
+    Coverpoint PADDR_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin SYS_STATUS_REG_b                             2572          1          -    Covered              
+        bin INT_CTRL_REG_b                               2732          1          -    Covered              
+        bin DEV_ID_REG_b                                 2688          1          -    Covered              
+        bin MEM_CTRL_REG_b                               2848          1          -    Covered              
+        bin TEMP_SENSOR_REG_b                            2740          1          -    Covered              
+        bin ADC_CTRL_REG_b                               2772          1          -    Covered              
+        bin DBG_CTRL_REG_b                               2941          1          -    Covered              
+        bin GPIO_DATA_REG_b                              2900          1          -    Covered              
+        bin DAC_OUTPUT_REG_b                             2784          1          -    Covered              
+        bin VOLTAGE_CTRL_REG_b                           2740          1          -    Covered              
+        bin CLK_CONFIG_REG_b                             2845          1          -    Covered              
+        bin TIMER_COUNT_REG_b                            2680          1          -    Covered              
+        bin INPUT_DATA_REG_b                             2820          1          -    Covered              
+        bin OUTPUT_DATA_REG_b                            2645          1          -    Covered              
+        bin DMA_CTRL_REG_b                               2816          1          -    Covered              
+        bin SYS_CTRL_REG_b                               2888          1          -    Covered              
+    Coverpoint PSELx_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin selected                                    33300          1          -    Covered              
+        bin unselected                                  11111          1          -    Covered              
+    Coverpoint PENABLE_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin enabled                                     20200          1          -    Covered              
+        bin not_enabled                                 24210          1          -    Covered              
+    Coverpoint PRDATA_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zeros                                         173          1          -    Covered              
+        bin ones                                          187          1          -    Covered              
+        default bin others                               2192                     -    Occurred             
+    Coverpoint PREADY_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin ready                                        9904          1          -    Covered              
+        bin not_ready                                   34511          1          -    Covered              
+    Cross PSELx_cross_PENABLE                         100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin Setup_phase                             13099          1          -    Covered              
+            bin Access_phase                            20200          1          -    Covered              
+            bin Idle_phase                              11111          1          -    Covered              
+    Cross PWRITE_cross_PREADY                          87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read_write_trans,not_ready>            23339          1          -    Covered              
+            bin <write_read_trans,not_ready>             2165          1          -    Covered              
+            bin <read,not_ready>                         9002          1          -    Covered              
+            bin <write,not_ready>                       25505          1          -    Covered              
+            bin <read_write_trans,ready>                 7352          1          -    Covered              
+            bin <read,ready>                             2552          1          -    Covered              
+            bin <write,ready>                            7352          1          -    Covered              
+            bin <write_read_trans,ready>                    0          1          1    ZERO                 
+    Cross PWRITE_cross_RegADDR                        100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read_write_trans,SYS_CTRL_REG_b>        1956          1          -    Covered              
+            bin <write_read_trans,SYS_CTRL_REG_b>         157          1          -    Covered              
+            bin <read,SYS_CTRL_REG_b>                     796          1          -    Covered              
+            bin <write,SYS_CTRL_REG_b>                   2092          1          -    Covered              
+            bin <read_write_trans,DMA_CTRL_REG_b>        1981          1          -    Covered              
+            bin <write_read_trans,DMA_CTRL_REG_b>         133          1          -    Covered              
+            bin <read,DMA_CTRL_REG_b>                     708          1          -    Covered              
+            bin <write,DMA_CTRL_REG_b>                   2108          1          -    Covered              
+            bin <read_write_trans,OUTPUT_DATA_REG_b> 
+                                                         1828          1          -    Covered              
+            bin <write_read_trans,OUTPUT_DATA_REG_b> 
+                                                          124          1          -    Covered              
+            bin <read,OUTPUT_DATA_REG_b>                  688          1          -    Covered              
+            bin <write,OUTPUT_DATA_REG_b>                1957          1          -    Covered              
+            bin <read_write_trans,INPUT_DATA_REG_b> 
+                                                         1922          1          -    Covered              
+            bin <write_read_trans,INPUT_DATA_REG_b> 
+                                                          145          1          -    Covered              
+            bin <read,INPUT_DATA_REG_b>                   764          1          -    Covered              
+            bin <write,INPUT_DATA_REG_b>                 2056          1          -    Covered              
+            bin <read_write_trans,TIMER_COUNT_REG_b> 
+                                                         1830          1          -    Covered              
+            bin <write_read_trans,TIMER_COUNT_REG_b> 
+                                                          140          1          -    Covered              
+            bin <read,TIMER_COUNT_REG_b>                  720          1          -    Covered              
+            bin <write,TIMER_COUNT_REG_b>                1960          1          -    Covered              
+            bin <read_write_trans,CLK_CONFIG_REG_b> 
+                                                         1982          1          -    Covered              
+            bin <write_read_trans,CLK_CONFIG_REG_b> 
+                                                          136          1          -    Covered              
+            bin <read,CLK_CONFIG_REG_b>                   729          1          -    Covered              
+            bin <write,CLK_CONFIG_REG_b>                 2116          1          -    Covered              
+            bin <read_write_trans,VOLTAGE_CTRL_REG_b> 
+                                                         1841          1          -    Covered              
+            bin <write_read_trans,VOLTAGE_CTRL_REG_b> 
+                                                          134          1          -    Covered              
+            bin <read,VOLTAGE_CTRL_REG_b>                 764          1          -    Covered              
+            bin <write,VOLTAGE_CTRL_REG_b>               1976          1          -    Covered              
+            bin <read_write_trans,DAC_OUTPUT_REG_b> 
+                                                         1930          1          -    Covered              
+            bin <write_read_trans,DAC_OUTPUT_REG_b> 
+                                                          138          1          -    Covered              
+            bin <read,DAC_OUTPUT_REG_b>                   724          1          -    Covered              
+            bin <write,DAC_OUTPUT_REG_b>                 2060          1          -    Covered              
+            bin <read_write_trans,GPIO_DATA_REG_b>       1979          1          -    Covered              
+            bin <write_read_trans,GPIO_DATA_REG_b>        145          1          -    Covered              
+            bin <read,GPIO_DATA_REG_b>                    784          1          -    Covered              
+            bin <write,GPIO_DATA_REG_b>                  2116          1          -    Covered              
+            bin <read_write_trans,DBG_CTRL_REG_b>        2048          1          -    Covered              
+            bin <write_read_trans,DBG_CTRL_REG_b>         139          1          -    Covered              
+            bin <read,DBG_CTRL_REG_b>                     737          1          -    Covered              
+            bin <write,DBG_CTRL_REG_b>                   2204          1          -    Covered              
+            bin <read_write_trans,ADC_CTRL_REG_b>        1988          1          -    Covered              
+            bin <write_read_trans,ADC_CTRL_REG_b>         116          1          -    Covered              
+            bin <read,ADC_CTRL_REG_b>                     640          1          -    Covered              
+            bin <write,ADC_CTRL_REG_b>                   2132          1          -    Covered              
+            bin <read_write_trans,TEMP_SENSOR_REG_b> 
+                                                         1892          1          -    Covered              
+            bin <write_read_trans,TEMP_SENSOR_REG_b> 
+                                                          137          1          -    Covered              
+            bin <read,TEMP_SENSOR_REG_b>                  708          1          -    Covered              
+            bin <write,TEMP_SENSOR_REG_b>                2032          1          -    Covered              
+            bin <read_write_trans,MEM_CTRL_REG_b>        1977          1          -    Covered              
+            bin <write_read_trans,MEM_CTRL_REG_b>         134          1          -    Covered              
+            bin <read,MEM_CTRL_REG_b>                     728          1          -    Covered              
+            bin <write,MEM_CTRL_REG_b>                   2120          1          -    Covered              
+            bin <read_write_trans,DEV_ID_REG_b>          1826          1          -    Covered              
+            bin <write_read_trans,DEV_ID_REG_b>           135          1          -    Covered              
+            bin <read,DEV_ID_REG_b>                       728          1          -    Covered              
+            bin <write,DEV_ID_REG_b>                     1960          1          -    Covered              
+            bin <read_write_trans,INT_CTRL_REG_b>        1821          1          -    Covered              
+            bin <write_read_trans,INT_CTRL_REG_b>         146          1          -    Covered              
+            bin <read,INT_CTRL_REG_b>                     788          1          -    Covered              
+            bin <write,INT_CTRL_REG_b>                   1944          1          -    Covered              
+            bin <read_write_trans,SYS_STATUS_REG_b> 
+                                                         1890          1          -    Covered              
+            bin <write_read_trans,SYS_STATUS_REG_b> 
+                                                          106          1          -    Covered              
+            bin <read,SYS_STATUS_REG_b>                   548          1          -    Covered              
+            bin <write,SYS_STATUS_REG_b>                 2024          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_pkg/apb_funct_coverage/apb_funct_cov_cg 
+                                                       98.86%        100          -    Uncovered            
+    covered/total bins:                                   108        109          -                      
+    missing/total bins:                                     1        109          -                      
+    % Hit:                                             99.08%        100          -                      
+    Coverpoint PRESETn_cp                              50.00%        100          -    Uncovered            
+        covered/total bins:                                 4          8          -                      
+        missing/total bins:                                 4          8          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PWRITE_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 4          8          -                      
+        missing/total bins:                                 4          8          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PWDATA_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PADDR_cp                                50.00%        100          -    Uncovered            
+        covered/total bins:                                16         32          -                      
+        missing/total bins:                                16         32          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PSELx_cp                                50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PENABLE_cp                              50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PRDATA_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Coverpoint PREADY_cp                               50.00%        100          -    Uncovered            
+        covered/total bins:                                 2          4          -                      
+        missing/total bins:                                 2          4          -                      
+        % Hit:                                         50.00%        100          -                      
+    Cross PSELx_cross_PENABLE                          50.00%        100          -    Uncovered            
+        covered/total bins:                                 3          6          -                      
+        missing/total bins:                                 3          6          -                      
+        % Hit:                                         50.00%        100          -                      
+    Cross PWRITE_cross_PREADY                          43.75%        100          -    Uncovered            
+        covered/total bins:                                 7         16          -                      
+        missing/total bins:                                 9         16          -                      
+        % Hit:                                         43.75%        100          -                      
+    Cross PWRITE_cross_RegADDR                         50.00%        100          -    Uncovered            
+        covered/total bins:                                64        128          -                      
+        missing/total bins:                                64        128          -                      
+        % Hit:                                         50.00%        100          -                      
+ Covergroup instance \/coverage_pkg::apb_funct_coverage::apb_funct_cov_cg#2  
+                                                       98.86%        100          -    Uncovered            
+    covered/total bins:                                   108        109          -                      
+    missing/total bins:                                     1        109          -                      
+    % Hit:                                             99.08%        100          -                      
+    Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin deasserted                                    846          1          -    Covered              
+        bin asserted                                    43569          1          -    Covered              
+        bin asserted_deasserted_trans                     210          1          -    Covered              
+        bin deasserted_asserted_trans                     209          1          -    Covered              
+    Coverpoint PWRITE_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                       32857          1          -    Covered              
+        bin read                                        11554          1          -    Covered              
+        bin write_read_trans                             2165          1          -    Covered              
+        bin read_write_trans                            30691          1          -    Covered              
+    Coverpoint PWDATA_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zeros                                        2252          1          -    Covered              
+        bin ones                                         3165          1          -    Covered              
+        default bin others                              27440                     -    Occurred             
+    Coverpoint PADDR_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin SYS_STATUS_REG_b                             2572          1          -    Covered              
+        bin INT_CTRL_REG_b                               2732          1          -    Covered              
+        bin DEV_ID_REG_b                                 2688          1          -    Covered              
+        bin MEM_CTRL_REG_b                               2848          1          -    Covered              
+        bin TEMP_SENSOR_REG_b                            2740          1          -    Covered              
+        bin ADC_CTRL_REG_b                               2772          1          -    Covered              
+        bin DBG_CTRL_REG_b                               2941          1          -    Covered              
+        bin GPIO_DATA_REG_b                              2900          1          -    Covered              
+        bin DAC_OUTPUT_REG_b                             2784          1          -    Covered              
+        bin VOLTAGE_CTRL_REG_b                           2740          1          -    Covered              
+        bin CLK_CONFIG_REG_b                             2845          1          -    Covered              
+        bin TIMER_COUNT_REG_b                            2680          1          -    Covered              
+        bin INPUT_DATA_REG_b                             2820          1          -    Covered              
+        bin OUTPUT_DATA_REG_b                            2645          1          -    Covered              
+        bin DMA_CTRL_REG_b                               2816          1          -    Covered              
+        bin SYS_CTRL_REG_b                               2888          1          -    Covered              
+    Coverpoint PSELx_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin selected                                    33300          1          -    Covered              
+        bin unselected                                  11111          1          -    Covered              
+    Coverpoint PENABLE_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin enabled                                     20200          1          -    Covered              
+        bin not_enabled                                 24210          1          -    Covered              
+    Coverpoint PRDATA_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zeros                                         173          1          -    Covered              
+        bin ones                                          187          1          -    Covered              
+        default bin others                               2192                     -    Occurred             
+    Coverpoint PREADY_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin ready                                        9904          1          -    Covered              
+        bin not_ready                                   34511          1          -    Covered              
+    Cross PSELx_cross_PENABLE                         100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin Setup_phase                             13099          1          -    Covered              
+            bin Access_phase                            20200          1          -    Covered              
+            bin Idle_phase                              11111          1          -    Covered              
+    Cross PWRITE_cross_PREADY                          87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read_write_trans,not_ready>            23339          1          -    Covered              
+            bin <write_read_trans,not_ready>             2165          1          -    Covered              
+            bin <read,not_ready>                         9002          1          -    Covered              
+            bin <write,not_ready>                       25505          1          -    Covered              
+            bin <read_write_trans,ready>                 7352          1          -    Covered              
+            bin <read,ready>                             2552          1          -    Covered              
+            bin <write,ready>                            7352          1          -    Covered              
+            bin <write_read_trans,ready>                    0          1          1    ZERO                 
+    Cross PWRITE_cross_RegADDR                        100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read_write_trans,SYS_CTRL_REG_b>        1956          1          -    Covered              
+            bin <write_read_trans,SYS_CTRL_REG_b>         157          1          -    Covered              
+            bin <read,SYS_CTRL_REG_b>                     796          1          -    Covered              
+            bin <write,SYS_CTRL_REG_b>                   2092          1          -    Covered              
+            bin <read_write_trans,DMA_CTRL_REG_b>        1981          1          -    Covered              
+            bin <write_read_trans,DMA_CTRL_REG_b>         133          1          -    Covered              
+            bin <read,DMA_CTRL_REG_b>                     708          1          -    Covered              
+            bin <write,DMA_CTRL_REG_b>                   2108          1          -    Covered              
+            bin <read_write_trans,OUTPUT_DATA_REG_b> 
+                                                         1828          1          -    Covered              
+            bin <write_read_trans,OUTPUT_DATA_REG_b> 
+                                                          124          1          -    Covered              
+            bin <read,OUTPUT_DATA_REG_b>                  688          1          -    Covered              
+            bin <write,OUTPUT_DATA_REG_b>                1957          1          -    Covered              
+            bin <read_write_trans,INPUT_DATA_REG_b> 
+                                                         1922          1          -    Covered              
+            bin <write_read_trans,INPUT_DATA_REG_b> 
+                                                          145          1          -    Covered              
+            bin <read,INPUT_DATA_REG_b>                   764          1          -    Covered              
+            bin <write,INPUT_DATA_REG_b>                 2056          1          -    Covered              
+            bin <read_write_trans,TIMER_COUNT_REG_b> 
+                                                         1830          1          -    Covered              
+            bin <write_read_trans,TIMER_COUNT_REG_b> 
+                                                          140          1          -    Covered              
+            bin <read,TIMER_COUNT_REG_b>                  720          1          -    Covered              
+            bin <write,TIMER_COUNT_REG_b>                1960          1          -    Covered              
+            bin <read_write_trans,CLK_CONFIG_REG_b> 
+                                                         1982          1          -    Covered              
+            bin <write_read_trans,CLK_CONFIG_REG_b> 
+                                                          136          1          -    Covered              
+            bin <read,CLK_CONFIG_REG_b>                   729          1          -    Covered              
+            bin <write,CLK_CONFIG_REG_b>                 2116          1          -    Covered              
+            bin <read_write_trans,VOLTAGE_CTRL_REG_b> 
+                                                         1841          1          -    Covered              
+            bin <write_read_trans,VOLTAGE_CTRL_REG_b> 
+                                                          134          1          -    Covered              
+            bin <read,VOLTAGE_CTRL_REG_b>                 764          1          -    Covered              
+            bin <write,VOLTAGE_CTRL_REG_b>               1976          1          -    Covered              
+            bin <read_write_trans,DAC_OUTPUT_REG_b> 
+                                                         1930          1          -    Covered              
+            bin <write_read_trans,DAC_OUTPUT_REG_b> 
+                                                          138          1          -    Covered              
+            bin <read,DAC_OUTPUT_REG_b>                   724          1          -    Covered              
+            bin <write,DAC_OUTPUT_REG_b>                 2060          1          -    Covered              
+            bin <read_write_trans,GPIO_DATA_REG_b>       1979          1          -    Covered              
+            bin <write_read_trans,GPIO_DATA_REG_b>        145          1          -    Covered              
+            bin <read,GPIO_DATA_REG_b>                    784          1          -    Covered              
+            bin <write,GPIO_DATA_REG_b>                  2116          1          -    Covered              
+            bin <read_write_trans,DBG_CTRL_REG_b>        2048          1          -    Covered              
+            bin <write_read_trans,DBG_CTRL_REG_b>         139          1          -    Covered              
+            bin <read,DBG_CTRL_REG_b>                     737          1          -    Covered              
+            bin <write,DBG_CTRL_REG_b>                   2204          1          -    Covered              
+            bin <read_write_trans,ADC_CTRL_REG_b>        1988          1          -    Covered              
+            bin <write_read_trans,ADC_CTRL_REG_b>         116          1          -    Covered              
+            bin <read,ADC_CTRL_REG_b>                     640          1          -    Covered              
+            bin <write,ADC_CTRL_REG_b>                   2132          1          -    Covered              
+            bin <read_write_trans,TEMP_SENSOR_REG_b> 
+                                                         1892          1          -    Covered              
+            bin <write_read_trans,TEMP_SENSOR_REG_b> 
+                                                          137          1          -    Covered              
+            bin <read,TEMP_SENSOR_REG_b>                  708          1          -    Covered              
+            bin <write,TEMP_SENSOR_REG_b>                2032          1          -    Covered              
+            bin <read_write_trans,MEM_CTRL_REG_b>        1977          1          -    Covered              
+            bin <write_read_trans,MEM_CTRL_REG_b>         134          1          -    Covered              
+            bin <read,MEM_CTRL_REG_b>                     728          1          -    Covered              
+            bin <write,MEM_CTRL_REG_b>                   2120          1          -    Covered              
+            bin <read_write_trans,DEV_ID_REG_b>          1826          1          -    Covered              
+            bin <write_read_trans,DEV_ID_REG_b>           135          1          -    Covered              
+            bin <read,DEV_ID_REG_b>                       728          1          -    Covered              
+            bin <write,DEV_ID_REG_b>                     1960          1          -    Covered              
+            bin <read_write_trans,INT_CTRL_REG_b>        1821          1          -    Covered              
+            bin <write_read_trans,INT_CTRL_REG_b>         146          1          -    Covered              
+            bin <read,INT_CTRL_REG_b>                     788          1          -    Covered              
+            bin <write,INT_CTRL_REG_b>                   1944          1          -    Covered              
+            bin <read_write_trans,SYS_STATUS_REG_b> 
+                                                         1890          1          -    Covered              
+            bin <write_read_trans,SYS_STATUS_REG_b> 
+                                                          106          1          -    Covered              
+            bin <read,SYS_STATUS_REG_b>                   548          1          -    Covered              
+            bin <write,SYS_STATUS_REG_b>                 2024          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 98.86%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/apb_top/duv/slave/cov_ST_A1             apb_slave_new Verilog  SVA  apb_slave.sv(229)
+                                                                               846 Covered   
+/apb_top/duv/slave/cov_apb_protocol      apb_slave_new Verilog  SVA  apb_slave.sv(249)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_addr_stable       apb_slave_new Verilog  SVA  apb_slave.sv(254)
+                                                                              9904 Covered   
+/apb_top/duv/slave/cov_Wdata_stable      apb_slave_new Verilog  SVA  apb_slave.sv(259)
+                                                                              7352 Covered   
+/apb_top/duv/slave/cov_pready_when_expected 
+                                         apb_slave_new Verilog  SVA  apb_slave.sv(264)
+                                                                              9904 Covered   
+/apb_top/duv/slave/cov_rdata_valid       apb_slave_new Verilog  SVA  apb_slave.sv(269)
+                                                                              2552 Covered   
+/apb_top/duv/slave/cov_reg_enable_when_access 
+                                         apb_slave_new Verilog  SVA  apb_slave.sv(274)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_reg_addr_matched  apb_slave_new Verilog  SVA  apb_slave.sv(279)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_reg_wdata_matched apb_slave_new Verilog  SVA  apb_slave.sv(284)
+                                                                              14702 Covered   
+/apb_top/duv/slave/cov_reg_write_matched apb_slave_new Verilog  SVA  apb_slave.sv(289)
+                                                                              19808 Covered   
+/apb_top/duv/slave/cov_no_write_when_zero_strb 
+                                         apb_slave_new Verilog  SVA  apb_slave.sv(294)
+                                                                                 2 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 11
+
+Total Coverage By Instance (filtered view): 99.43%
+

@@ -1,0 +1,2 @@
+var g_data = ["","shared_pkg.sv","transaction.sv","top.sv","interface.sv","apb_wrapper.sv","apb_slave.sv","register_file.sv","coverage.sv","testbench.sv","scoreboard.sv","monitor.sv"];
+processSrcNamesData(g_data);
