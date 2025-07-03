@@ -1,2 +1,0 @@
-var g_data = {"8":["work.RegisterFile",97.09,1],"5":["work.apb_if",72.89,1],"14":["work.apb_monitor",100.00,1],"7":["work.apb_slave_new",90.26,1],"11":["work.apb_tb",100.00,1],"4":["work.apb_top",100.00,1],"6":["work.apb_wrapper",72.51,1],"9":["work.coverage_pkg",99.43,1],"12":["work.scoreboard_pkg",54.61,1]};
-processDuLinks(g_data);
