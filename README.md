@@ -69,10 +69,13 @@ This project implements a comprehensive verification testbench for an APB slave 
 ### Coverage Analysis
 
 #### Code Coverage Summary
-![CodeCoverage](./Reports/Design_Coverage_Summary.png)
+##### Slave
+![CodeCoverage](./Reports/slave_scov.png)
+##### Register File
+![CodeCoverage](./Reports/reg_scov.png)
 
 #### Functional Coverage Summary
-![FunctionalCoverage](./Reports/Fcoverage.png)
+![FunctionalCoverage](./Reports/fcov.png)
 
 ## Results
 
