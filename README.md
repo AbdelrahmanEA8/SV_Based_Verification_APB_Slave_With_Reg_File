@@ -64,19 +64,6 @@ This project implements a comprehensive verification testbench for an APB slave 
 - Control signal integrity
 - Reset behavior monitoring
 
-## Running Tests
-
-### Coverage Analysis
-
-#### Code Coverage Summary
-##### Slave
-![CodeCoverage](./Reports/slave_scov.png)
-##### Register File
-![CodeCoverage](./Reports/reg_scov.png)
-
-#### Functional Coverage Summary
-![FunctionalCoverage](./Reports/fcov.png)
-
 ## Results
 
 Test results and coverage reports are available in the `Reports/` directory:
